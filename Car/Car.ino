@@ -17,10 +17,9 @@ Serial.begin(9600);
 struct stick 
 { 
   int x; 
-  int y; 
- 
- 
- 
+  int y;
+}
+
 void getSpeedOfWheels(stick leftStick, stick rightStick) 
 { 
     int leftWheelUp = leftStick.y - leftStick.x + rightStick.x + rightStick.y; 
